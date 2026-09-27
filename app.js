@@ -1,5 +1,4 @@
-// app.js：渲染结果
-import { insertKey, rankOf } from "./sorted.js";
+// app.js：渲染结果（十七个键，键名与验收脚本一致，不能改）
 import { step, close } from "./sortrun.js";
 
 export function render(spec) {
@@ -30,6 +29,5 @@ export function render(spec) {
            closed_equal: fingerprint(closedTwo.state) === fingerprint(closed.state),
            replay_new: replay.served, judged: first.judged, judged_bound: first.judged_bound,
            full_diff: fingerprint(closed.state) === fingerprint(fullClosed.state) ? 0 : 1,
-           count: events.length,
-           tail: insertKey([], 7).length + rankOf([3, 5], 5) };
+           count: events.length };
 }
