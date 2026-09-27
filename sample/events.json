@@ -1,0 +1,14 @@
+{
+  "budget": 1,
+  "dup_error_code": "E_DUP_KEY",
+  "missing_error_code": "E_MISSING",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "keys": [], "ranks": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "insert", "key": 5 },
+    { "id": 2, "kind": "insert", "key": 3 },
+    { "id": 3, "kind": "rank", "key": 3 },
+    { "id": 4, "kind": "insert", "key": 8 },
+    { "id": 5, "kind": "rank", "key": 8 }
+  ]
+}
